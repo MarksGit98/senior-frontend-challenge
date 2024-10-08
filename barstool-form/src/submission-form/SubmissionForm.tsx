@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { nameRegex, US_STATES, isValidEmail, isValidDOB } from "./utils";
 import { useForm, SubmitHandler } from "react-hook-form";
-import TextInput from "./form-elements/TextFormField";
+import TextFormInput from "./form-elements/TextFormField";
 import SelectFormInput from "./form-elements/SelectFormField";
 import DateFormInput from "./form-elements/DateFormField";
 import CheckboxFormInput from "./form-elements/CheckboxFormField";
@@ -65,7 +65,7 @@ const SubmissionForm = () => {
       <h2 className="form-title">Registration Form</h2>
       {!submissionMessage ? (
         <form onSubmit={handleSubmit(onSubmit)}>
-          <TextInput
+          <TextFormInput
             label="First Name"
             name="fName"
             placeholder="Jane"
@@ -80,7 +80,7 @@ const SubmissionForm = () => {
             }}
           />
 
-          <TextInput
+          <TextFormInput
             label="Last Name"
             name="lName"
             placeholder="Doe"
@@ -95,7 +95,7 @@ const SubmissionForm = () => {
             }}
           />
 
-          <TextInput
+          <TextFormInput
             label="Email"
             name="email"
             type="email"
