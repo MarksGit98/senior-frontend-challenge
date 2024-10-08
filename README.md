@@ -11,4 +11,6 @@ As per the description of the assignment I separated my components in the form t
 
 One layer deeper in the **form-elements** folder are the individual different types of field components I used (Text, Select, Date, Checkbox). Each one of these developers to specify a **field** **name**, **label**, and **validationRules** for the fields. **Register** and **Errors** are passed from **react-hook-form**'s **useForm** Hook. This acts as a central state for all the form information and errors. 
 
-Styling in both the **index.css** file and primarily in the **SubmissionForm.css** file using regular CSS.
+Styling in both the **index.css** file and primarily in the **SubmissionForm.css** file using regular CSS. 
+
+There is also a **utils.js** function in the **submission-form** folder which I put some regex expressions for validation, a few custom validation functions I defined for Date of Birth and Email, and all 50 states for the dropdown.
